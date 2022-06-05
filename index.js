@@ -8,10 +8,9 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 const sorter = (listNama, fnCallback) => {
   hasil = [];
+  fnCallback(listNama);
   for (counter = 0; counter < listNama.length; counter++) {
-    if (fnCallback(listNama)) {
-      hasil.push(`${counter + 1} ${listNama[counter]}`);
-    }
+    hasil.push(counter + 1 + ". " + listNama[counter]);
   }
   return hasil;
 };
