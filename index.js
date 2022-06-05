@@ -9,8 +9,8 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 const sorter = (listNama, sortNama) => {
   fungsiSortir = sortNama(listNama);
   hasil = [];
-  for (counter = 0; counter < listNama.length; counter++) {
-    hasil.push(`${counter + 1} ${listNama[counter]}`);
+  for (counter = 0; counter < fungsiSortir.length; counter++) {
+    hasil.push(`${counter + 1} ${fungsiSortir[counter]}`);
   }
   return hasil;
 };
